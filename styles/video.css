@@ -1,0 +1,136 @@
+
+  div {
+    font-family: arial;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  .video-title {
+    width: 250px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+@media (min-width: 1000px){
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-author, .video-stats{
+    font-size: 15px;
+  }
+}
+
+  .video-author,
+  .video-stats {
+    font-size: 13px;
+    color: rgb(96, 96, 96);
+  }
+ 
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .profile-picture {
+    width: 42px;
+    border-radius: 50px;
+  }
+
+  .video-author {
+    margin-bottom: 4px;
+  }
+
+  .thumbnail-row {
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+
+@media(max-width:750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(min-width:751px) and (max-width:999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width:1060px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+ 
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px ;
+    border-radius: 2px;
+  }
+  .profile-icon{
+    position: relative;
+  }
+  .channel-hover{
+position: absolute;
+top: 50px;
+background-color: white;
+   border: none;
+   border-radius: 8px;
+   box-shadow: 1px 2px 4px  rgba(0, 0, 0, 0.23);
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 10px;
+   padding-right: 60px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   pointer-events: none;
+   transition: opacity 0.15s;
+   opacity: 0;
+   z-index: 300;
+  }
+.profile-icon:hover .channel-hover{
+    opacity: 1;
+}
+.hover-picture{
+    border-radius: 30px;
+    height: 55px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+ .profile-hover{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-family: roboto, arial;
+ }
+ .channel{
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+    padding-top: 3px;
+ }
+ .subscribers{
+    margin-top: 3px;
+    color: rgb(110, 110, 110);
+ }
+
+
+  
+  
+
